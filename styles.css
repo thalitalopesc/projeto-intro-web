@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    display: grid;
+    grid-template-rows: 75vh 1fr 10vh;
+    background-color: #a460f9;
+}
+
+header{
+    background-color: #181818;
+}
+
+#header-img{
+    width: 100vw
+}
+
+#buscar {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    color: #a460f9;
+    height: 30px;
+    width: 250px;
+    background-color: #181818;
+    border-color: #a460f9;
+
+}
+
+button:active{
+    color: #a460f9;
+    background-color: #181818;
+}
+
+button {
+    margin-left: 15PX;
+    width: 150px;
+    background-color: #b960fd;
+    border-color: #b960fd;
+}
+
+#series {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    padding: 30px;                                
+}
+
+.resultado {
+    height: 100vh;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 440px;
+    height: 230px;
+    background: #b960fd;
+    border-radius: 10px;
+}
+
+.bloco:hover{
+    transform: scale(1.1);
+    font-size: 20px;
+}
+
+.imagem:hover{
+    filter: grayscale(0%);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #181818;
+    background-color: #a460f9;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+#texto-rodapé{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vw;
+    gap: 1vh;
+}
+
+#ícones-lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 1vw;
+    margin-right: 5vw;
+}
+
+#ícone{
+    width: 2vw;
+}
+
+#saibamais{
+    color: aliceblue;
+}
+
+.imagem{
+    width: 180px;
+    border-radius: 20%;
+    filter: grayscale(100%);
+}
+
+ul{
+    list-style-type: none
+}
+
+
+.lista {
+    font-size: 1rem;
+    text-align: center;
+    padding: 25px;
+}
+
+ul > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Renovada {
+    font-weight: bold;
+}
+
+.container {
+    background-color: #181818;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    body {
+        display: grid;
+        grid-template-rows:26vh 1fr 10vh;
+    }
+
+    .header-img {
+        width: 100vw;
+    }
+
+    section{
+        width: 90vw;
+        height: 230px;
+    }
+
+    footer {
+        height: 15vh;
+    }
+
+    #ícone{
+        width: 5vw;
+    }
+    
+    #ícones-lista{
+        gap: 3vw;
+        margin-right: 10vw;
+    }
+
+    #texto-rodapé{
+        margin-left: 10vw;
+        gap: 1vh;
+    }
+
+}
